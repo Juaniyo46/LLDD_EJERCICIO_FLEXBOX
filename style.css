@@ -1,4 +1,12 @@
 .global {
+}
+
+.cubo {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.venta {
 	display: flex;
 }
 
