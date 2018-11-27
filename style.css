@@ -1,16 +1,89 @@
 .global {
+	background-color: lightgrey;
+}
+
+p {
+	font-size: 1.5em;
 }
 
 .cubo {
 	display: flex;
 	flex-wrap: nowrap;
+	padding: 1em;
+	background-color: lightsalmon;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	background-color: orange;
+}
+
+.menu p {
+	margin: 1em;
+}
+
+.bigimag {
+	width: 100%;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 
 .venta {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 1em;
+}
+
+.venta p {
+	text-align: center;
+}
+
+.info {
+	text-align: center;
+	background-color: white;
+	padding: 3em;
 }
 
 .producto {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
+}
+
+.redes {
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+}
+
+.redes img {
+	margin: 1em;
+}
+
+
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: wheat;
+}
+
+@media only screen and (max-width: 768px){
+	.container {
+		flex-direction: column;
+	}
+
+	.venta {
+		flex-direction: column;
+	}
+	
+	.menu {
+		flex-direction: column;
+	}
+
+	p {
+		font-size: 1em;
+	}
 }
